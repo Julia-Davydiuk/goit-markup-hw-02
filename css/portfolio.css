@@ -25,6 +25,12 @@ body {
 }
 
 /*===========COMPONENTS===========*/
+.logo-accent {
+  color: #2196f3;
+}
+/*===========END COMPONENTS===========*/
+
+/*===========HEADER===========*/
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -34,9 +40,7 @@ body {
 
   color: #000000;
 }
-/*===========END COMPONENTS===========*/
 
-/*===========HEADER===========*/
 .navigation-list-link {
   font-weight: 500;
   font-size: 14px;
@@ -99,7 +103,17 @@ body {
 }
 /*===========END ALL PROJECTS===========*/
 
-/*===========CONTACT===========*/
+/*===========FOOTER===========*/
+.footer-logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+
+  /*color: #ffffff;*/
+}
+
 .contact-location {
   font-weight: 400;
   font-size: 14px;
@@ -117,4 +131,4 @@ body {
 
   /*color: rgba(255, 255, 255, 0.6);*/
 }
-/*===========END CONTACT===========*/
+/*===========END FOOTER===========*/

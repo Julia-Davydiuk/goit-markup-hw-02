@@ -24,13 +24,8 @@ body {
 }
 
 /*===========COMPONENTS===========*/
-.logo {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: #000000;
+.logo-accent {
+  color: #2196f3;
 }
 
 .title {
@@ -45,6 +40,16 @@ body {
 /*=========== END COMPONENTS===========*/
 
 /*===========HEADER===========*/
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
+
 .navigation-list-link {
   font-weight: 500;
   font-size: 14px;
@@ -144,12 +149,23 @@ body {
 }
 /*===========END TEAM===========*/
 
-/*===========CONTACT===========*/
+/*===========FOOTER===========*/
+.footer-logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+
+  /*color: #ffffff;*/
+}
+
 .contact-location {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
+  color: #000000;
 
   /*color: #ffffff;*/
 }
@@ -159,7 +175,8 @@ body {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
+  color: #757575;
 
   /*color: rgba(255, 255, 255, 0.6);*/
 }
-/*===========END CONTACT===========*/
+/*===========END FOOTER===========*/
