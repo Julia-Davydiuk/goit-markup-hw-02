@@ -1,15 +1,18 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
+  --logo-color: #000000;
   --accent-color: #2196f3;
-  --accent-btn-color: #ffffff;
+  --secondary-color: #ffffff;
   --title-color: #212121;
   --description-color: #757575;
+  --btn-background: #f5f4fa;
+  --background-secondary: #2f303a;
+  --contact-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: var(--main-font);
-  font-style: normal;
 }
 
 .list {
@@ -26,7 +29,7 @@ body {
 
 /*===========COMPONENTS===========*/
 .logo-accent {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /*===========END COMPONENTS===========*/
 
@@ -37,8 +40,7 @@ body {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-
-  color: #000000;
+  color: var(--logo-color);
 }
 
 .navigation-list-link {
@@ -48,6 +50,10 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--title-color);
+}
+
+.navigation-list .navigation-list-link.current {
+  color: var(--accent-color);
 }
 
 .navigation-list-link:hover,
@@ -70,6 +76,11 @@ body {
 /*===========END HEADER===========*/
 
 /*===========BUTTON===========*/
+.our-projects-list .modal-btn.current {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+}
+
 .modal-btn {
   font-weight: 500;
   font-size: 16px;
@@ -77,11 +88,16 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  background: var(--btn-background);
+
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-  color: var(--accent-btn-color);
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 /*===========END BUTTON===========*/
 
@@ -104,14 +120,24 @@ body {
 /*===========END ALL PROJECTS===========*/
 
 /*===========FOOTER===========*/
+.footer {
+  background-color: var(--background-secondary);
+}
+
+.contact-link:hover,
+.contact-link:focus,
+.contact-location:hover,
+.contact-location:focus {
+  color: var(--accent-color);
+}
+
 .footer-logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-
-  /*color: #ffffff;*/
+  color: var(--secondary-color);
 }
 
 .contact-location {
@@ -119,8 +145,7 @@ body {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-
-  /*color: #ffffff;*/
+  color: var(--secondary-color);
 }
 
 .contact-link {
@@ -128,7 +153,6 @@ body {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-
-  /*color: rgba(255, 255, 255, 0.6);*/
+  color: var(--contact-color);
 }
 /*===========END FOOTER===========*/
